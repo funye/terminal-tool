@@ -14,14 +14,14 @@ Linux / MacOS 系统用来连接ssh的命令行工具
    {
         "name": "server-test", // 服务器名称，自定义
         "type": "sshkey", // ssh的方式，password或者sshkey,分别代表使用【密码连接】和使用【sshkey】连接
-        "keyFile": "group_dev.pem", // sshkey 秘钥文件
+        "keyFile": "group_dev.pem", // sshkey 秘钥文件本地地址
         "host": "192.168.0.200", // 服务主机的IP 或者域名
         "port": "22", // ssh端口
         "user": "group_dev", // ssh登录用户名
         "password": "0Ox5DQhYz5Ej8gSf", // ssh密码或者 sshkey的加密密码
         "remark": "有用测试环境跳板机"// 服务器具体描述 
     }
-    以上参数，没有的时候填 "" 即可
+    以上参数，没有的时候填 "" 即可， 如果使用的是sshkey的方式登录
     ```
 
 2. 执行进入start.sh所在目录，执行 start.sh 打开列表，选中服务器编号即可
@@ -31,7 +31,7 @@ Linux / MacOS 系统用来连接ssh的命令行工具
 
 **spawn** 命令实现模拟的人机交互
 
-**shell jq** 解析服务器的配(config.json) 
+**shell jq** 解析服务器的配置(config.json) 
 
 
 
