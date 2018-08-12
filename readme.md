@@ -11,7 +11,7 @@ Linux / MacOS 系统用来连接ssh的命令行工具
    ```json
    {
         "name": "server-test", // 服务器名称，自定义
-        "type": "sshkey", // ssh的方式，password 或者 sshkey  分别代表使用密码连接 和 使用 sshkey 连接
+        "type": "sshkey", // ssh的方式，password或者sshkey,分别代表使用【密码连接】和使用【sshkey】连接
         "keyFile": "group_dev.pem", // sshkey 秘钥文件
         "host": "192.168.0.200", // 服务主机的IP 或者域名
         "port": "22", // ssh端口
@@ -27,8 +27,9 @@ Linux / MacOS 系统用来连接ssh的命令行工具
 
 ### 实现原理
 
-spawn 命令实现模拟的人机交互
-shell jq 解析服务器的配(config.json) 
+**spawn** 命令实现模拟的人机交互
+
+**shell jq** 解析服务器的配(config.json) 
 
 
 
