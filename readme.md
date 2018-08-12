@@ -33,5 +33,7 @@ Linux / MacOS 系统用来连接ssh的命令行工具
 
 **shell jq** 解析服务器的配置(config.json) 
 
+### 运行效果
 
+![效果图](1534078859828.jpg)
 
