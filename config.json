@@ -1,0 +1,21 @@
+[{
+        "name": "server01",
+        "type": "password",
+        "keyFile": "",
+        "host": "192.168.0.100",
+        "port": "22",
+        "user": "root",
+        "password": "mypsd01",
+        "remark": "阿里云机器"
+    },
+    {
+        "name": "server-test",
+        "type": "sshkey",
+        "keyFile": "group_dev.pem",
+        "host": "192.168.0.200",
+        "port": "22",
+        "user": "group_dev",
+        "password": "0Ox5DQhYz5Ej8gSf",
+        "remark": "测试环境跳板机"
+    }
+]
