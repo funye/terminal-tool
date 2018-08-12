@@ -14,7 +14,7 @@ Linux / MacOS 系统用来连接ssh的命令行工具
    {
         "name": "server-test", // 服务器名称，自定义
         "type": "sshkey", // ssh的方式，password或者sshkey,分别代表使用【密码连接】和使用【sshkey】连接
-        "keyFile": "group_dev.pem", // sshkey 秘钥文件本地地址
+        "keyFile": "group_dev.pem", // sshkey 秘钥文件本地地址。 或者直接把秘钥拷贝到和start.sh同文件夹，此处就可直接填文件名
         "host": "192.168.0.200", // 服务主机的IP 或者域名
         "port": "22", // ssh端口
         "user": "group_dev", // ssh登录用户名
