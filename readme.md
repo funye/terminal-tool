@@ -5,6 +5,8 @@ Linux / MacOS 系统用来连接ssh的命令行工具
 ### 环境配置 
 这个shell脚本需要安装 [shell jq](https://www.ibm.com/developerworks/cn/linux/1612_chengg_jq/index.html?ca=drs-&utm_source=tuicool&utm_medium=referral)
 
+在mac下安装jq，使用brew install jq就可以了，前提是安装了homebrew，如果在linux ubuntu下，应该可以使用sudo apt-get install jq安装。
+
 ### 使用说明
 
 1. 修改config.json的配置为自己的服务器配置
