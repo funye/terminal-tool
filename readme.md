@@ -25,7 +25,7 @@ Linux / MacOS 系统用来连接ssh的命令行工具
     ```
 
 2. 执行进入start.sh所在目录，执行 start.sh 打开列表，选中服务器编号即可
-3. 如果想要更加快速，可以在 ~/.basg_profile 中添加波别名。例如： `alias sshls='cd /Users/funye/terminal-tool && ./start.sh'` 这样在命令行直接键入 sshls 回车就可开始ssh连接。
+3. 如果想要更加快速，可以在 ~/.basg_profile 中添加别名。例如： `alias sshls='cd /Users/funye/terminal-tool && ./start.sh'` 这样在命令行直接键入 sshls 回车就可开始ssh连接。
 
 ### 实现原理
 
