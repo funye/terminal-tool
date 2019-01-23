@@ -9,7 +9,11 @@ Linux / MacOS 系统用来连接ssh的命令行工具
 
 ### 使用说明
 
-1. 修改config.json的配置为自己的服务器配置
+1. 确保自己安装了jq
+
+2. clone本项目到本地某个目录 例如 `/Users/funye/terminal-tool`
+
+3. 修改config.json的配置为自己的服务器配置
    ```json
    {
         "name": "server-test", // 服务器名称，自定义
@@ -23,9 +27,11 @@ Linux / MacOS 系统用来连接ssh的命令行工具
     }
     以上参数，没有的时候填 "" 即可， 如果使用的是sshkey的方式登录
     ```
+**sshkey 秘钥文件本地地址。 或者直接把秘钥拷贝到和start.sh同文件夹，此处就可直接填文件名**
 
-2. 执行进入start.sh所在目录，执行 start.sh 打开列表，选中服务器编号即可
-3. 如果想要更加快速，可以在 ~/.basg_profile 中添加别名。例如： `alias sshls='cd /Users/funye/terminal-tool && ./start.sh'` 这样在命令行直接键入 sshls 回车就可开始ssh连接。
+4. 执行进入start.sh所在目录，执行 start.sh 打开列表，选中服务器编号即可， 如果是使用秘钥文件登录，可能会报错 `permissions xxx for 'xxxxxx' are too open` 这个时候，修改下秘钥文件权限  chmod 400 xxx  (xxx为秘钥文件名称)
+
+5. 如果想要更加快速，可以在 ~/.basg_profile 中添加别名。例如： `alias sshls='cd /Users/funye/terminal-tool && ./start.sh'` 这样在命令行直接键入 sshls 回车就可开始ssh连接。其中`/Users/funye/terminal-tool`为项目下载下来的目录
 
 ### 实现原理
 
