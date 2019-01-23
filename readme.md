@@ -19,7 +19,7 @@ Linux / MacOS 系统用来连接ssh的命令行工具
         "port": "22", // ssh端口
         "user": "group_dev", // ssh登录用户名
         "password": "0Ox5DQhYz5Ej8gSf", // ssh密码或者 sshkey的加密密码
-        "remark": "有用测试环境跳板机"// 服务器具体描述 
+        "remark": "测试环境跳板机"// 服务器具体描述 
     }
     以上参数，没有的时候填 "" 即可， 如果使用的是sshkey的方式登录
     ```
