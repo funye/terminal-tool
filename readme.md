@@ -31,7 +31,7 @@ Linux / MacOS 系统用来连接ssh的命令行工具
 
 4. 执行进入start.sh所在目录，执行 start.sh 打开列表，选中服务器编号即可， 如果是使用秘钥文件登录，可能会报错 `permissions xxx for 'xxxxxx' are too open` 这个时候，修改下秘钥文件权限  chmod 400 xxx  (xxx为秘钥文件名称)
 
-5. 如果想要更加快速，可以在 ~/.basg_profile 中添加别名。例如： `alias sshls='cd /Users/funye/terminal-tool && ./start.sh'` 这样在命令行直接键入 sshls 回车就可开始ssh连接。其中`/Users/funye/terminal-tool`为项目下载下来的目录
+5. 如果想要更加快速，可以在 ~/.bash_profile 中添加别名。例如： `alias sshls='cd /Users/funye/terminal-tool && ./start.sh'` 这样在命令行直接键入 sshls 回车就可开始ssh连接。其中`/Users/funye/terminal-tool`为项目下载下来的目录
 
 ### 实现原理
 
